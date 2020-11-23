@@ -12,6 +12,7 @@ TabButton {
     QGCPalette { id: qgcPalDisabled; colorGroupEnabled: false }
     background: Rectangle {
         color:                  enabled ? (_showHighlight ? qgcPal.buttonHighlight : qgcPal.button) : qgcPalDisabled.button
+
     }
     contentItem: QGCLabel {
         text:                   control.text

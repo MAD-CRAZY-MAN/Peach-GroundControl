@@ -260,7 +260,6 @@ int main(int argc, char *argv[])
 #ifdef Q_OS_WIN
     // Set our own OpenGL buglist
     qputenv("QT_OPENGL_BUGLIST", ":/opengl/resources/opengl/buglist.json");
-
     // Allow for command line override of renderer
     for (int i = 0; i < argc; i++) {
         const QString arg(argv[i]);

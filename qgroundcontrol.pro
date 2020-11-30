@@ -26,7 +26,7 @@ message(Qt version $$[QT_VERSION])
 
 include(QGCCommon.pri)
 
-TARGET   = QGroundControl
+TARGET   = Giant-GroundControl
 TEMPLATE = app
 QGCROOT  = $$PWD
 
@@ -54,7 +54,7 @@ LinuxBuild {
 }
 
 WindowsBuild {
-    RC_ICONS = resources/icons/qgroundcontrol.ico
+    RC_ICONS = resources/icons/GLogoFull.ico
     CONFIG += resources_big
 }
 
@@ -62,15 +62,15 @@ WindowsBuild {
 # Branding
 #
 
-QGC_APP_NAME        = "QGroundControl"
-QGC_ORG_NAME        = "QGroundControl.org"
-QGC_ORG_DOMAIN      = "org.qgroundcontrol"
+QGC_APP_NAME        = "Giant-Groundcontrol"
+QGC_ORG_NAME        = "Giant GroundControl.org"
+QGC_ORG_DOMAIN      = "org.Giantgroundcontrol"
 QGC_APP_DESCRIPTION = "Open source ground control app provided by QGroundControl dev team"
 QGC_APP_COPYRIGHT   = "Copyright (C) 2019 QGroundControl Development Team. All rights reserved."
 
 WindowsBuild {
-    QGC_INSTALLER_ICON          = "WindowsQGC.ico"
-    QGC_INSTALLER_HEADER_BITMAP = "installheader.bmp"
+    QGC_INSTALLER_ICON          = "GLogoFull.ico"
+    QGC_INSTALLER_HEADER_BITMAP = "giantInstallheader.bmp"
 }
 
 # Load additional config flags from user_config.pri
@@ -352,7 +352,7 @@ CustomBuild {
         RESOURCES += $$PWD/qgcimages.qrc
     }
 } else {
-    DEFINES += QGC_APPLICATION_NAME=\"\\\"QGroundControl\\\"\"
+    DEFINES += QGC_APPLICATION_NAME=\"\\\"Giant-GourndControl\\\"\"
     DEFINES += QGC_ORG_NAME=\"\\\"QGroundControl.org\\\"\"
     DEFINES += QGC_ORG_DOMAIN=\"\\\"org.qgroundcontrol\\\"\"
     RESOURCES += \

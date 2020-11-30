@@ -28,6 +28,7 @@ ApplicationWindow {
     minimumWidth:   ScreenTools.isMobile ? Screen.width  : Math.min(ScreenTools.defaultFontPixelWidth * 100, Screen.width)
     minimumHeight:  ScreenTools.isMobile ? Screen.height : Math.min(ScreenTools.defaultFontPixelWidth * 50, Screen.height)
     visible:        true
+    title:          "Giant GroundControl"
 
     Component.onCompleted: {
         //-- Full screen on mobile or tiny screens
@@ -249,7 +250,7 @@ ApplicationWindow {
 
     MessageDialog {
         id:                 unsavedMissionCloseDialog
-        title:              qsTr("%1 close").arg(QGroundControl.appName)
+        title:              "Giant drone" //qsTr("%1 close").arg(QGroundControl.appName)
         text:               qsTr("You have a mission edit in progress which has not been saved/sent. If you close you will lose changes. Are you sure you want to close?")
         standardButtons:    StandardButton.Yes | StandardButton.No
         modality:           Qt.ApplicationModal
@@ -266,7 +267,7 @@ ApplicationWindow {
 
     MessageDialog {
         id:                 pendingParameterWritesCloseDialog
-        title:              qsTr("%1 close").arg(QGroundControl.appName)
+        title:              "Giant drone" //qsTr("%1 close").arg(QGroundControl.appName)
         text:               qsTr("You have pending parameter updates to a vehicle. If you close you will lose changes. Are you sure you want to close?")
         standardButtons:    StandardButton.Yes | StandardButton.No
         modality:           Qt.ApplicationModal
@@ -285,7 +286,7 @@ ApplicationWindow {
 
     MessageDialog {
         id:                 activeConnectionsCloseDialog
-        title:              qsTr("%1 close").arg(QGroundControl.appName)
+        title:              "Giant drone" //qsTr("%1 close").arg(QGroundControl.appName)
         text:               qsTr("There are still active connections to vehicles. Are you sure you want to exit?")
         standardButtons:    StandardButton.Yes | StandardButton.Cancel
         modality:           Qt.ApplicationModal

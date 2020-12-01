@@ -132,6 +132,11 @@ ApplicationWindow {
         analyzeWindow.visible = true
     }
 
+    function showSikRadioView() {
+        viewSwitch(false)
+        sikradioWindow.visible = true
+    }
+
     function showSetupView() {
         viewSwitch(false)
         setupWindow.visible = true
@@ -388,6 +393,15 @@ ApplicationWindow {
         anchors.fill:   parent
         visible:        false
         source:         "AnalyzeView.qml"
+    }
+
+    //-------------------------------------------------------------------------
+    /// Sik Radio
+    Loader {
+        id:             sikradioWindow
+        anchors.fill:   parent
+        visible:        false
+        source:         "SikRadioView.qml"
     }
 
     //-------------------------------------------------------------------------

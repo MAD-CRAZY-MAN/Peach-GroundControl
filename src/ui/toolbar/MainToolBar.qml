@@ -186,6 +186,21 @@ Item {
                     }
                 }
 
+                QGCToolBarButton {
+                    id:                 sikRadio
+                    Layout.fillHeight:  true
+                    icon.source:        "/qmlimages/Hamburger.svg"
+                    visible:            QGroundControl.corePlugin.showAdvancedUI
+                    onClicked: {
+                        if (mainWindow.preventViewSwitch()) {
+                            return
+                        }
+                        buttonRow.clearAllChecks()
+                        checked = true
+                        mainWindow.showSikRadioView()
+                    }
+                }
+
                 Item {
                     Layout.fillHeight:  true
                     width:              ScreenTools.defaultFontPixelWidth / 2

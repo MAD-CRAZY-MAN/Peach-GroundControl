@@ -32,7 +32,7 @@ Button {
 
     background: Rectangle {
         anchors.fill: parent
-        color:  logo ? "#004387" : (button.checked ? qgcPal.buttonHighlight : Qt.rgba(0,0,0,0))
+        color:  logo ? "#ed798E" : (button.checked ? qgcPal.buttonHighlight : Qt.rgba(0,0,0,0))
     //qgcPal.brandingPurple
     }
 

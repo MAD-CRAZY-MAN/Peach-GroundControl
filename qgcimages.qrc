@@ -189,8 +189,7 @@
         <file alias="Yield.svg">src/ui/toolbar/Images/Yield.svg</file>
         <file alias="ZoomMinus.svg">src/FlightMap/Images/ZoomMinus.svg</file>
         <file alias="ZoomPlus.svg">src/FlightMap/Images/ZoomPlus.svg</file>
-        <file alias="GLogoFull.ico">src/ui/toolbar/Images/GLogoFull.ico</file>
-        <file alias="GLogoFull.svg">src/ui/toolbar/Images/GLogoFull.svg</file>
-        <file alias="GLogoWhite.svg">src/ui/toolbar/Images/GLogoWhite.svg</file>
+        <file alias="PLogoFull.svg">src/ui/toolbar/Images/PLogoFull.svg</file>
+        <file alias="PLogoWhite.svg">src/ui/toolbar/Images/PLogoWhite.svg</file>
     </qresource>
 </RCC>

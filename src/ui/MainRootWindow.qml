@@ -106,6 +106,7 @@ ApplicationWindow {
         analyzeWindow.visible   = false
         flightView.visible      = false
         planViewLoader.visible  = false
+        sikradioWindow.visible = false
         if(isPlanView) {
             toolbar.source  = _planToolbar
         } else {
@@ -396,7 +397,7 @@ ApplicationWindow {
     }
 
     //-------------------------------------------------------------------------
-    /// Sik Radio
+    /// sik radio
     Loader {
         id:             sikradioWindow
         anchors.fill:   parent
